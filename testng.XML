@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="IMSD-Suite" >
+   <test name="ClickOperations" preserve-order="true">
+       <classes> 
+          <class name="com.imsd.tests.LoginPageTest" />
+          <class name="com.imsd.tests.DashboardPageTest"/>
+          <class name="com.imsd.tests.BookingSearchPageTest" />  
+          <class name="com.imsd.tests.GroupedBookingsPageTest" />   
+          <class name="com.imsd.tests.AddBookingPageTest" />
+          <class name="com.imsd.tests.ContactsPageTest" />
+          <class name="com.imsd.tests.AssignBookingsPageTest" />
+          <class name="com.imsd.tests.MyAssignmentsPageTest" />
+       </classes>
+   </test>
+ </suite>

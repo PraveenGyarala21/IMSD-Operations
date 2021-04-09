@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-IMSD-Suite" class="navigator-link">
+              <span class="suite-name border-failed">IMSD-Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-IMSD-Suite" class="navigator-link ">
+                    <span>D:\Eclipce-Projects-Storage\IMSD-Operations\testng.XML</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-IMSD-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-IMSD-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-IMSD-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-IMSD-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-IMSD-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-IMSD-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-IMSD-Suite" class="hide-methods failed suite-IMSD-Suite"> (hide)</a> <!-- hide-methods failed suite-IMSD-Suite -->
+                      <a href="#" panel-name="suite-IMSD-Suite" class="show-methods failed suite-IMSD-Suite"> (show)</a> <!-- show-methods failed suite-IMSD-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-IMSD-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IMSD-Suite" title="com.imsd.tests.DashboardPageTest" class="method navigator-link" hash-for-method="verifyDashboardPageTileTest">verifyDashboardPageTileTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-IMSD-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-IMSD-Suite" class="hide-methods passed suite-IMSD-Suite"> (hide)</a> <!-- hide-methods passed suite-IMSD-Suite -->
+                      <a href="#" panel-name="suite-IMSD-Suite" class="show-methods passed suite-IMSD-Suite"> (show)</a> <!-- show-methods passed suite-IMSD-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-IMSD-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IMSD-Suite" title="com.imsd.tests.ContactsPageTest" class="method navigator-link" hash-for-method="clickAssignBookingsLinkTest">clickAssignBookingsLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IMSD-Suite" title="com.imsd.tests.AddBookingPageTest" class="method navigator-link" hash-for-method="clickContactsLinkTest">clickContactsLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IMSD-Suite" title="com.imsd.tests.GroupedBookingsPageTest" class="method navigator-link" hash-for-method="clickGroupedBookingsLinkTest">clickGroupedBookingsLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IMSD-Suite" title="com.imsd.tests.BookingSearchPageTest" class="method navigator-link" hash-for-method="clickGroupedBookingslinkTest">clickGroupedBookingslinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IMSD-Suite" title="com.imsd.tests.AssignBookingsPageTest" class="method navigator-link" hash-for-method="clickMyAssignmentsLinkTest">clickMyAssignmentsLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IMSD-Suite" title="com.imsd.tests.MyAssignmentsPageTest" class="method navigator-link" hash-for-method="clickMyAssignmentsLinkTest">clickMyAssignmentsLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IMSD-Suite" title="com.imsd.tests.DashboardPageTest" class="method navigator-link" hash-for-method="clickOperationsTileTest">clickOperationsTileTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-IMSD-Suite" title="com.imsd.tests.LoginPageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-IMSD-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-IMSD-Suite" class="panel IMSD-Suite">
+          <div class="suite-IMSD-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.imsd.tests.DashboardPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDashboardPageTileTest">
+                  </a> <!-- verifyDashboardPageTileTest -->
+                  <span class="method-name">verifyDashboardPageTileTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Dashboardpage Tile not matched expected [Praveen] but found [Bookings - thebigword gms]
+	at com.imsd.tests.DashboardPageTest.verifyDashboardPageTileTest(DashboardPageTest.java:33)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IMSD-Suite-class-failed -->
+          <div class="suite-IMSD-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.imsd.tests.MyAssignmentsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickMyAssignmentsLinkTest">
+                  </a> <!-- clickMyAssignmentsLinkTest -->
+                  <span class="method-name">clickMyAssignmentsLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IMSD-Suite-class-passed -->
+          <div class="suite-IMSD-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.imsd.tests.AssignBookingsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickMyAssignmentsLinkTest">
+                  </a> <!-- clickMyAssignmentsLinkTest -->
+                  <span class="method-name">clickMyAssignmentsLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IMSD-Suite-class-passed -->
+          <div class="suite-IMSD-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.imsd.tests.AddBookingPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickContactsLinkTest">
+                  </a> <!-- clickContactsLinkTest -->
+                  <span class="method-name">clickContactsLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IMSD-Suite-class-passed -->
+          <div class="suite-IMSD-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.imsd.tests.BookingSearchPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickGroupedBookingslinkTest">
+                  </a> <!-- clickGroupedBookingslinkTest -->
+                  <span class="method-name">clickGroupedBookingslinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IMSD-Suite-class-passed -->
+          <div class="suite-IMSD-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.imsd.tests.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IMSD-Suite-class-passed -->
+          <div class="suite-IMSD-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.imsd.tests.ContactsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickAssignBookingsLinkTest">
+                  </a> <!-- clickAssignBookingsLinkTest -->
+                  <span class="method-name">clickAssignBookingsLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IMSD-Suite-class-passed -->
+          <div class="suite-IMSD-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.imsd.tests.GroupedBookingsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickGroupedBookingsLinkTest">
+                  </a> <!-- clickGroupedBookingsLinkTest -->
+                  <span class="method-name">clickGroupedBookingsLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IMSD-Suite-class-passed -->
+          <div class="suite-IMSD-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.imsd.tests.DashboardPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOperationsTileTest">
+                  </a> <!-- clickOperationsTileTest -->
+                  <span class="method-name">clickOperationsTileTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IMSD-Suite-class-passed -->
+        </div> <!-- panel IMSD-Suite -->
+        <div panel-name="test-xml-IMSD-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Eclipce-Projects-Storage\IMSD-Operations\testng.XML</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;IMSD-Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ClickOperations&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.imsd.tests.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.imsd.tests.DashboardPageTest&quot;/&gt;
+      &lt;class name=&quot;com.imsd.tests.BookingSearchPageTest&quot;/&gt;
+      &lt;class name=&quot;com.imsd.tests.GroupedBookingsPageTest&quot;/&gt;
+      &lt;class name=&quot;com.imsd.tests.AddBookingPageTest&quot;/&gt;
+      &lt;class name=&quot;com.imsd.tests.ContactsPageTest&quot;/&gt;
+      &lt;class name=&quot;com.imsd.tests.AssignBookingsPageTest&quot;/&gt;
+      &lt;class name=&quot;com.imsd.tests.MyAssignmentsPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ClickOperations --&gt;
+&lt;/suite&gt; &lt;!-- IMSD-Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-IMSD-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for IMSD-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ClickOperations (8 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-IMSD-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for IMSD-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-IMSD-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for IMSD-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_IMSD-Suite');
+function tableData_IMSD-Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.imsd.tests.LoginPageTest')
+data.setCell(0, 3, 28540);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'clickContactsLinkTest')
+data.setCell(1, 2, 'com.imsd.tests.AddBookingPageTest')
+data.setCell(1, 3, 7719);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'clickGroupedBookingsLinkTest')
+data.setCell(2, 2, 'com.imsd.tests.GroupedBookingsPageTest')
+data.setCell(2, 3, 5975);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'clickOperationsTileTest')
+data.setCell(3, 2, 'com.imsd.tests.DashboardPageTest')
+data.setCell(3, 3, 4543);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'clickAssignBookingsLinkTest')
+data.setCell(4, 2, 'com.imsd.tests.ContactsPageTest')
+data.setCell(4, 3, 3293);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'clickGroupedBookingslinkTest')
+data.setCell(5, 2, 'com.imsd.tests.BookingSearchPageTest')
+data.setCell(5, 3, 1414);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'clickMyAssignmentsLinkTest')
+data.setCell(6, 2, 'com.imsd.tests.AssignBookingsPageTest')
+data.setCell(6, 3, 1067);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'clickMyAssignmentsLinkTest')
+data.setCell(7, 2, 'com.imsd.tests.MyAssignmentsPageTest')
+data.setCell(7, 3, 792);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyDashboardPageTileTest')
+data.setCell(8, 2, 'com.imsd.tests.DashboardPageTest')
+data.setCell(8, 3, 7);
+window.suiteTableData['IMSD-Suite']= { tableData: data, tableDiv: 'times-div-IMSD-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
+              <div id="times-div-IMSD-Suite">
+              </div> <!-- times-div-IMSD-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-IMSD-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for IMSD-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-IMSD-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-IMSD-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.imsd.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">6048 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.imsd.tests.DashboardPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickOperationsTileTest</span>
+                <span class="method-start">34591 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyDashboardPageTileTest</span>
+                <span class="method-start">39135 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.imsd.tests.BookingSearchPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickGroupedBookingslinkTest</span>
+                <span class="method-start">39144 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.imsd.tests.GroupedBookingsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickGroupedBookingsLinkTest</span>
+                <span class="method-start">40562 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.imsd.tests.AddBookingPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickContactsLinkTest</span>
+                <span class="method-start">46538 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.imsd.tests.ContactsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickAssignBookingsLinkTest</span>
+                <span class="method-start">54258 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.imsd.tests.AssignBookingsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickMyAssignmentsLinkTest</span>
+                <span class="method-start">57552 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.imsd.tests.MyAssignmentsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickMyAssignmentsLinkTest</span>
+                <span class="method-start">58619 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.imsd.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">59474 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

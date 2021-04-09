@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [IMSD-Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ClickOperations(failed)">
+    <classes>
+      <class name="com.imsd.tests.DashboardPageTest">
+        <methods>
+          <include name="verifyDashboardPageTileTest"/>
+        </methods>
+      </class> <!-- com.imsd.tests.DashboardPageTest -->
+    </classes>
+  </test> <!-- ClickOperations(failed) -->
+</suite> <!-- Failed suite [IMSD-Suite] -->
