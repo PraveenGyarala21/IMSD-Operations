@@ -1,5 +1,12 @@
 package com.imsd.pages;
 
-public class ManageAssignmentsPage {
+import com.imsd.base.TestBase;
+
+public class ManageAssignmentsPage extends TestBase {
+	
+	public ManageAssignmentsPage() {
+		
+		super();
+	}
 
 }
