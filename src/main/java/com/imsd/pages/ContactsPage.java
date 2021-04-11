@@ -22,6 +22,20 @@ public class ContactsPage extends TestBase {
 	
 	//Actions
 	
+    public String verifyContactsPageTile() {
+		
+		return driver.getTitle();
+	} 
+    
+    
+    
+    public void navigateBack() {
+    
+    	driver.navigate().back();
+    
+    }
+    
+	
 	public AssignBookingsPage clickAssignBookingsLink() {
 		
 		assignBookingsLink.click();

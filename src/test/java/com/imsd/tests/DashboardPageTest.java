@@ -28,18 +28,18 @@ public class DashboardPageTest extends TestBase {
 	@Test()
 	public void verifyDashboardPageTileTest() {
 		
+		dashboardPage = new DashboardPage();
+		
 		String dashboardPageTile = dashboardPage.verifyDashboardPageTitle();
 		
-		Assert.assertEquals(dashboardPageTile, "Praveen", "Dashboardpage Tile not matched");
+		Assert.assertEquals(dashboardPageTile, "Apps - thebigword gms", "Dashboardpage Tile not matched");
 	}
 	
 	
-	@Test()
+	@Test(dependsOnMethods= {"verifyDashboardPageTileTest"})
 	public void clickOperationsTileTest() throws InterruptedException {
 		
-		dashboardPage = new DashboardPage();
-		
-		bookingsearchPage	= dashboardPage.clickOperationTile();
+	 bookingsearchPage	= dashboardPage.clickOperationTile();
 		
 	}
 	

@@ -11,22 +11,35 @@ public class GroupedBookingsPage extends TestBase {
 	
 	
 	//Page Foctory
-	@FindBy(xpath = "//ul[@class=\"sidebarMenu\"]/li[4]")
-	WebElement addbookinglink;
+	  @FindBy(xpath = "//ul[@class=\"sidebarMenu\"]/li[4]")
+	  WebElement addbookinglink;
 	
 	//Initializing the page objects
-	public GroupedBookingsPage() {
-		PageFactory.initElements(driver, this);
-	}
+	  public GroupedBookingsPage() {
+		
+		  PageFactory.initElements(driver, this);
+	 
+	  }
 	
 	
 	
 	//Actions
-	public AddBookingPage clickAddBookingsLink() {
-		addbookinglink.click();
+	  
+	  public String verifyGourpedBookingsPageTile() {
+		  
+		  return driver.getTitle();
+	  }
+	  
+	  
+	  public AddBookingPage clickAddBookingsLink() {
+		
+		  addbookinglink.click();
 		
 		return new AddBookingPage();
-	}
+	 }
+	  
+	  
+	  
 	
 	
 

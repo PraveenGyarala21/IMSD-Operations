@@ -1,5 +1,6 @@
 package com.imsd.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.imsd.pages.BookingSearchPage;
@@ -17,14 +18,28 @@ public class BookingSearchPageTest {
 	}
 	
 	
-	
-	@Test
-	public void clickGroupedBookingslinkTest() {
+	@Test ()
+	public void verifyBookingSearchPageTitleTest() {
 		
 		bookingSearhPage = new BookingSearchPage();
 		
+		String bookingSearchPageTile = bookingSearhPage.verifyBookingSearchPageTitle();
+		
+		Assert.assertEquals(bookingSearchPageTile, "Bookings - thebigword gms", "BookingSearchPageTitle did not match");
+	}
+	
+	
+	@Test(dependsOnMethods= {"verifyBookingSearchPageTitleTest"})
+	public void clickGroupedBookingslinkTest() {
+		
+	
+		
 		groupedBookingsPage = bookingSearhPage.clickGroupedBookingslink();
 	}
+	
+	
+	
+	
 	
 	
 

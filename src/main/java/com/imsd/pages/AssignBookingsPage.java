@@ -21,6 +21,13 @@ public class AssignBookingsPage extends TestBase {
 	
 	
 	//Actions
+	
+	public String verifyAssignBookingsPageTitle() {
+		
+		return driver.getTitle();
+	}
+	
+	
 	public MyAssignmentsPage clickMyAssignmentsLink() {
 		
 		myAssignmentsLink.click();

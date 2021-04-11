@@ -1,5 +1,7 @@
 package com.imsd.tests;
 
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 import com.imsd.base.TestBase;
@@ -18,17 +20,30 @@ public class GroupedBookingsPageTest extends TestBase{
 	
 	
 	@Test
-	public void clickGroupedBookingsLinkTest() throws InterruptedException {
+	public void verifyGroupedBookingsPageTitleTest() {
 		
 		groupedBookingsPage = new GroupedBookingsPage();
 		
+		String groupedBookingsTile = groupedBookingsPage.verifyGourpedBookingsPageTile();
+		
+		Assert.assertEquals(groupedBookingsTile, "Grouped Bookings - thebigword gms", "GroupedBookingsPage Title did not match");
+	}
+	
+	
+	
+	
+	@Test(dependsOnMethods= {"verifyGroupedBookingsPageTitleTest"})
+	public void clickAddBookingLinkTest() throws InterruptedException {
+		
 		groupedBookingsPage.clickAddBookingsLink();
 		
-		Thread.sleep(5000);
-		
-		driver.navigate().back();
 		
 	}
+	
+	
+	
+	
+	
 	
 	
 

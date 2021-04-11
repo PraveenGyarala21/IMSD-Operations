@@ -23,6 +23,8 @@ public class DashboardPage extends TestBase {
 	
 	
 	//Actions
+	
+	
 	public BookingSearchPage clickOperationTile() throws InterruptedException {
 		
 		System.out.println("Before Click");
@@ -33,6 +35,7 @@ public class DashboardPage extends TestBase {
 		
 		return new BookingSearchPage();
 	}
+	
 	
 	
 	public String verifyDashboardPageTitle() {

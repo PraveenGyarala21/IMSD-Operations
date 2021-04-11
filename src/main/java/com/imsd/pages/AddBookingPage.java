@@ -20,6 +20,20 @@ public class AddBookingPage extends TestBase {
 	
 	
 	//Actions
+	
+	public String verifyAddBookingPageTile() {
+		
+		return driver.getTitle();
+	}
+	
+	
+	public void navigateBack() {
+		
+		driver.navigate().back();
+	}
+	
+	
+	
 	public ContactsPage clickContactsLink() {
 		
 		contactsLink.click();

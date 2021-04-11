@@ -1,5 +1,7 @@
 package com.imsd.tests;
 
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 import com.imsd.base.TestBase;
@@ -12,20 +14,37 @@ public class AddBookingPageTest extends TestBase{
 	public AddBookingPageTest() {
 		super();
 	}
+	 
 	
 	
 	@Test
-	public void clickContactsLinkTest() throws InterruptedException {
+	public void verifyAddBookingPageTitleTest() {
 		
 		addBookingPage = new AddBookingPage();
 		
-		addBookingPage.clickContactsLink();
+		String addBookingPageTitle = addBookingPage.verifyAddBookingPageTile();
 		
-		Thread.sleep(5000);
+		Assert.assertEquals(addBookingPageTitle, "Contacts - thebigword gms", "AddBookingPage title did not match");
 		
-		driver.navigate().back();
 		
 	}
+	
+	
+	
+	
+	
+	@Test(dependsOnMethods= {"verifyAddBookingPageTitleTest"})
+	public void clickContactsLinkTest() throws InterruptedException {
+		
+		addBookingPage.navigateBack();
+			
+		addBookingPage.clickContactsLink();
+		
+		
+	}
+	
+	
+	
 	
 	
 

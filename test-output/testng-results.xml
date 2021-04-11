@@ -1,107 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-08T17:08:45Z" name="IMSD-Suite" finished-at="2021-04-08T17:09:38Z" duration-ms="53377">
+  <suite started-at="2021-04-11T16:28:55Z" name="IMSD-Suite" finished-at="2021-04-11T16:29:54Z" duration-ms="59119">
     <groups>
     </groups>
-    <test started-at="2021-04-08T17:08:45Z" name="ClickOperations" finished-at="2021-04-08T17:09:38Z" duration-ms="53377">
+    <test started-at="2021-04-11T16:28:55Z" name="ClickOperations" finished-at="2021-04-11T16:29:54Z" duration-ms="59119">
       <class name="com.imsd.tests.DashboardPageTest">
-        <test-method signature="clickOperationsTileTest()[pri:0, instance:com.imsd.tests.DashboardPageTest@7dc0f706]" started-at="2021-04-08T17:09:14Z" name="clickOperationsTileTest" finished-at="2021-04-08T17:09:18Z" duration-ms="4543" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOperationsTileTest -->
-        <test-method signature="verifyDashboardPageTileTest()[pri:0, instance:com.imsd.tests.DashboardPageTest@7dc0f706]" started-at="2021-04-08T17:09:18Z" name="verifyDashboardPageTileTest" finished-at="2021-04-08T17:09:18Z" duration-ms="7" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Dashboardpage Tile not matched expected [Praveen] but found [Bookings - thebigword gms]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Dashboardpage Tile not matched expected [Praveen] but found [Bookings - thebigword gms]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at com.imsd.tests.DashboardPageTest.verifyDashboardPageTileTest(DashboardPageTest.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifyDashboardPageTileTest()[pri:0, instance:com.imsd.tests.DashboardPageTest@2de23121]" started-at="2021-04-11T16:29:27Z" name="verifyDashboardPageTileTest" finished-at="2021-04-11T16:29:27Z" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDashboardPageTileTest -->
+        <test-method signature="clickOperationsTileTest()[pri:0, instance:com.imsd.tests.DashboardPageTest@2de23121]" started-at="2021-04-11T16:29:27Z" name="clickOperationsTileTest" finished-at="2021-04-11T16:29:38Z" depends-on-methods="com.imsd.tests.DashboardPageTest.verifyDashboardPageTileTest" duration-ms="10510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOperationsTileTest -->
       </class> <!-- com.imsd.tests.DashboardPageTest -->
       <class name="com.imsd.tests.MyAssignmentsPageTest">
-        <test-method signature="clickMyAssignmentsLinkTest()[pri:0, instance:com.imsd.tests.MyAssignmentsPageTest@63475ace]" started-at="2021-04-08T17:09:38Z" name="clickMyAssignmentsLinkTest" finished-at="2021-04-08T17:09:38Z" duration-ms="792" status="PASS">
+        <test-method signature="verifyMyAssignmentsPageTitleTest()[pri:0, instance:com.imsd.tests.MyAssignmentsPageTest@66d18979]" started-at="2021-04-11T16:29:53Z" name="verifyMyAssignmentsPageTitleTest" finished-at="2021-04-11T16:29:53Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMyAssignmentsPageTitleTest -->
+        <test-method signature="clickMyAssignmentsLinkTest()[pri:0, instance:com.imsd.tests.MyAssignmentsPageTest@66d18979]" started-at="2021-04-11T16:29:53Z" name="clickMyAssignmentsLinkTest" finished-at="2021-04-11T16:29:54Z" depends-on-methods="com.imsd.tests.MyAssignmentsPageTest.verifyMyAssignmentsPageTitleTest" duration-ms="936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickMyAssignmentsLinkTest -->
       </class> <!-- com.imsd.tests.MyAssignmentsPageTest -->
       <class name="com.imsd.tests.AssignBookingsPageTest">
-        <test-method signature="clickMyAssignmentsLinkTest()[pri:0, instance:com.imsd.tests.AssignBookingsPageTest@2de23121]" started-at="2021-04-08T17:09:37Z" name="clickMyAssignmentsLinkTest" finished-at="2021-04-08T17:09:38Z" duration-ms="1067" status="PASS">
+        <test-method signature="verifyAssignBookingsPageTitleTest()[pri:0, instance:com.imsd.tests.AssignBookingsPageTest@6913c1fb]" started-at="2021-04-11T16:29:52Z" name="verifyAssignBookingsPageTitleTest" finished-at="2021-04-11T16:29:52Z" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAssignBookingsPageTitleTest -->
+        <test-method signature="clickMyAssignmentsLinkTest()[pri:0, instance:com.imsd.tests.AssignBookingsPageTest@6913c1fb]" started-at="2021-04-11T16:29:52Z" name="clickMyAssignmentsLinkTest" finished-at="2021-04-11T16:29:53Z" depends-on-methods="com.imsd.tests.AssignBookingsPageTest.verifyAssignBookingsPageTitleTest" duration-ms="967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickMyAssignmentsLinkTest -->
       </class> <!-- com.imsd.tests.AssignBookingsPageTest -->
       <class name="com.imsd.tests.ContactsPageTest">
-        <test-method signature="clickAssignBookingsLinkTest()[pri:0, instance:com.imsd.tests.ContactsPageTest@22fcf7ab]" started-at="2021-04-08T17:09:33Z" name="clickAssignBookingsLinkTest" finished-at="2021-04-08T17:09:37Z" duration-ms="3293" status="PASS">
+        <test-method signature="verifyContactsPageTitleTest()[pri:0, instance:com.imsd.tests.ContactsPageTest@305b7c14]" started-at="2021-04-11T16:29:48Z" name="verifyContactsPageTitleTest" finished-at="2021-04-11T16:29:48Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactsPageTitleTest -->
+        <test-method signature="clickAssignBookingsLinkTest()[pri:0, instance:com.imsd.tests.ContactsPageTest@305b7c14]" started-at="2021-04-11T16:29:48Z" name="clickAssignBookingsLinkTest" finished-at="2021-04-11T16:29:52Z" depends-on-methods="com.imsd.tests.ContactsPageTest.verifyContactsPageTitleTest" duration-ms="3798" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAssignBookingsLinkTest -->
       </class> <!-- com.imsd.tests.ContactsPageTest -->
       <class name="com.imsd.tests.GroupedBookingsPageTest">
-        <test-method signature="clickGroupedBookingsLinkTest()[pri:0, instance:com.imsd.tests.GroupedBookingsPageTest@43c1b556]" started-at="2021-04-08T17:09:20Z" name="clickGroupedBookingsLinkTest" finished-at="2021-04-08T17:09:26Z" duration-ms="5975" status="PASS">
+        <test-method signature="verifyGroupedBookingsPageTitleTest()[pri:0, instance:com.imsd.tests.GroupedBookingsPageTest@4988d8b8]" started-at="2021-04-11T16:29:46Z" name="verifyGroupedBookingsPageTitleTest" finished-at="2021-04-11T16:29:46Z" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickGroupedBookingsLinkTest -->
+        </test-method> <!-- verifyGroupedBookingsPageTitleTest -->
+        <test-method signature="clickAddBookingLinkTest()[pri:0, instance:com.imsd.tests.GroupedBookingsPageTest@4988d8b8]" started-at="2021-04-11T16:29:46Z" name="clickAddBookingLinkTest" finished-at="2021-04-11T16:29:47Z" depends-on-methods="com.imsd.tests.GroupedBookingsPageTest.verifyGroupedBookingsPageTitleTest" duration-ms="995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAddBookingLinkTest -->
       </class> <!-- com.imsd.tests.GroupedBookingsPageTest -->
       <class name="com.imsd.tests.BookingSearchPageTest">
-        <test-method signature="clickGroupedBookingslinkTest()[pri:0, instance:com.imsd.tests.BookingSearchPageTest@4009e306]" started-at="2021-04-08T17:09:18Z" name="clickGroupedBookingslinkTest" finished-at="2021-04-08T17:09:20Z" duration-ms="1414" status="PASS">
+        <test-method signature="verifyBookingSearchPageTitleTest()[pri:0, instance:com.imsd.tests.BookingSearchPageTest@63475ace]" started-at="2021-04-11T16:29:38Z" name="verifyBookingSearchPageTitleTest" finished-at="2021-04-11T16:29:38Z" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBookingSearchPageTitleTest -->
+        <test-method signature="clickGroupedBookingslinkTest()[pri:0, instance:com.imsd.tests.BookingSearchPageTest@63475ace]" started-at="2021-04-11T16:29:38Z" name="clickGroupedBookingslinkTest" finished-at="2021-04-11T16:29:46Z" depends-on-methods="com.imsd.tests.BookingSearchPageTest.verifyBookingSearchPageTitleTest" duration-ms="8329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickGroupedBookingslinkTest -->
       </class> <!-- com.imsd.tests.BookingSearchPageTest -->
       <class name="com.imsd.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.imsd.tests.LoginPageTest@3d34d211]" started-at="2021-04-08T17:08:39Z" name="setup" finished-at="2021-04-08T17:08:45Z" duration-ms="6035" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.imsd.tests.LoginPageTest@22fcf7ab]" started-at="2021-04-11T16:28:43Z" name="setup" finished-at="2021-04-11T16:28:55Z" duration-ms="12017" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.imsd.tests.LoginPageTest@3d34d211]" started-at="2021-04-08T17:08:45Z" name="loginTest" finished-at="2021-04-08T17:09:14Z" duration-ms="28540" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.imsd.tests.LoginPageTest@22fcf7ab]" started-at="2021-04-11T16:28:55Z" name="loginTest" finished-at="2021-04-11T16:29:27Z" duration-ms="31846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.imsd.tests.LoginPageTest@3d34d211]" started-at="2021-04-08T17:09:38Z" name="tearDown" finished-at="2021-04-08T17:09:39Z" duration-ms="658" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.imsd.tests.LoginPageTest@22fcf7ab]" started-at="2021-04-11T16:29:54Z" name="tearDown" finished-at="2021-04-11T16:29:55Z" duration-ms="698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.imsd.tests.LoginPageTest -->
       <class name="com.imsd.tests.AddBookingPageTest">
-        <test-method signature="clickContactsLinkTest()[pri:0, instance:com.imsd.tests.AddBookingPageTest@587e5365]" started-at="2021-04-08T17:09:26Z" name="clickContactsLinkTest" finished-at="2021-04-08T17:09:33Z" duration-ms="7719" status="PASS">
+        <test-method signature="verifyAddBookingPageTitleTest()[pri:0, instance:com.imsd.tests.AddBookingPageTest@c0c2f8d]" started-at="2021-04-11T16:29:47Z" name="verifyAddBookingPageTitleTest" finished-at="2021-04-11T16:29:47Z" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddBookingPageTitleTest -->
+        <test-method signature="clickContactsLinkTest()[pri:0, instance:com.imsd.tests.AddBookingPageTest@c0c2f8d]" started-at="2021-04-11T16:29:47Z" name="clickContactsLinkTest" finished-at="2021-04-11T16:29:48Z" depends-on-methods="com.imsd.tests.AddBookingPageTest.verifyAddBookingPageTitleTest" duration-ms="1568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickContactsLinkTest -->

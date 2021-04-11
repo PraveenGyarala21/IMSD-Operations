@@ -3,11 +3,48 @@
 <suite name="Failed suite [IMSD-Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="ClickOperations(failed)">
     <classes>
+      <class name="com.imsd.tests.ContactsPageTest">
+        <methods>
+          <include name="verifyContactsPageTitleTest"/>
+          <include name="clickAssignBookingsLinkTest"/>
+        </methods>
+      </class> <!-- com.imsd.tests.ContactsPageTest -->
+      <class name="com.imsd.tests.BookingSearchPageTest">
+        <methods>
+          <include name="verifyBookingSearchPageTitleTest"/>
+          <include name="clickGroupedBookingslinkTest"/>
+        </methods>
+      </class> <!-- com.imsd.tests.BookingSearchPageTest -->
+      <class name="com.imsd.tests.GroupedBookingsPageTest">
+        <methods>
+          <include name="verifyGroupedBookingsPageTitleTest"/>
+          <include name="clickAddBookingLinkTest"/>
+        </methods>
+      </class> <!-- com.imsd.tests.GroupedBookingsPageTest -->
       <class name="com.imsd.tests.DashboardPageTest">
         <methods>
           <include name="verifyDashboardPageTileTest"/>
+          <include name="clickOperationsTileTest"/>
         </methods>
       </class> <!-- com.imsd.tests.DashboardPageTest -->
+      <class name="com.imsd.tests.MyAssignmentsPageTest">
+        <methods>
+          <include name="verifyMyAssignmentsPageTitleTest"/>
+          <include name="clickMyAssignmentsLinkTest"/>
+        </methods>
+      </class> <!-- com.imsd.tests.MyAssignmentsPageTest -->
+      <class name="com.imsd.tests.AddBookingPageTest">
+        <methods>
+          <include name="clickContactsLinkTest"/>
+          <include name="verifyAddBookingPageTitleTest"/>
+        </methods>
+      </class> <!-- com.imsd.tests.AddBookingPageTest -->
+      <class name="com.imsd.tests.AssignBookingsPageTest">
+        <methods>
+          <include name="verifyAssignBookingsPageTitleTest"/>
+          <include name="clickMyAssignmentsLinkTest"/>
+        </methods>
+      </class> <!-- com.imsd.tests.AssignBookingsPageTest -->
     </classes>
   </test> <!-- ClickOperations(failed) -->
 </suite> <!-- Failed suite [IMSD-Suite] -->

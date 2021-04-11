@@ -4,9 +4,10 @@ import com.imsd.base.TestBase;
 
 public class ManageAssignmentsPage extends TestBase {
 	
-	public ManageAssignmentsPage() {
-		
-		super();
-	}
+
+	
+	
+	
+	
 
 }

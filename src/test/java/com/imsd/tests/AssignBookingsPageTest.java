@@ -1,5 +1,6 @@
 package com.imsd.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.imsd.pages.AssignBookingsPage;
@@ -18,11 +19,21 @@ public class AssignBookingsPageTest {
 	
 	
 	@Test
-	public void clickMyAssignmentsLinkTest() {
+	public void verifyAssignBookingsPageTitleTest() {
 		
 		assignBookingsPage = new AssignBookingsPage();
 		
-		assignBookingsPage.clickMyAssignmentsLink();
+		String assignBookingsPageTitle = assignBookingsPage.verifyAssignBookingsPageTitle();
+		
+		Assert.assertEquals(assignBookingsPageTitle, "Bookings - thebigword gms", "AssignBookingsPage title did not match");
+	}
+	
+	
+	@Test(dependsOnMethods= {"verifyAssignBookingsPageTitleTest"})
+	public void clickMyAssignmentsLinkTest() {
+		
+		
+	assignBookingsPage.clickMyAssignmentsLink();
 		
 	}
 	

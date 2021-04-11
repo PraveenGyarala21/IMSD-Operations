@@ -11,8 +11,9 @@ import com.imsd.base.TestBase;
 public class BookingSearchPage extends TestBase {
 	
 	// Page Factory 
-	@FindBy(xpath="//ul[@class=\"sidebarMenu\"]/li[3]")
-	public WebElement groupedBookingslink;
+	 
+	   @FindBy(xpath="//ul[@class=\"sidebarMenu\"]/li[3]")
+	   public WebElement groupedBookingslink;
 	
 	//Initializing the Page Objects:
 		public BookingSearchPage(){
@@ -20,7 +21,8 @@ public class BookingSearchPage extends TestBase {
 		}
 		
 		
-		//Actions
+	//Actions
+		
 		public GroupedBookingsPage clickGroupedBookingslink() {
 			
 			groupedBookingslink.click();
@@ -28,6 +30,15 @@ public class BookingSearchPage extends TestBase {
 			return new GroupedBookingsPage();
 			
 		}
+		
+		
+		
+		public String verifyBookingSearchPageTitle() {
+			
+			return driver.getTitle();
+			
+		}
+			
 	
 		
 	

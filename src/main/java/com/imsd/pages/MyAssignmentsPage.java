@@ -19,6 +19,13 @@ public class MyAssignmentsPage extends TestBase {
 	
 	
 	//Actions
+	
+	public String verifyMyAssignmentsPageTitle() {
+		
+		return driver.getTitle();
+	}
+	
+	
 	public MyAssignmentsPage clickManageAssignmentsLink() {
 		
 		manageAssignmentsLink.click();
